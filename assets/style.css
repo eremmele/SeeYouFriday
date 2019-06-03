@@ -52,7 +52,8 @@ table {
 
 html, body {
 	font-family: 'Orienta', sans-serif;
-  color: #000000;
+  color: #ffffff;
+	background-color: #000000;
 }
 
 p {
@@ -138,6 +139,7 @@ p {
 	text-transform: uppercase;
 	width: 38%;
 	padding: 2%;
+	max-height: 100vh;
 }
 /*.button {
 	text-align: center;
