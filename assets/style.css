@@ -97,7 +97,7 @@ p {
 	margin-top:-3vh;
 	margin-bottom: -5vh;
 }
-.stack h1 {
+.stack h1, #output {
 	font-size: 53px;
 	color: #00FF85;
 	padding: 4vh 2vw;
