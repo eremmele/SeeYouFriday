@@ -1,0 +1,460 @@
+/********************* RESETS **********************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************* END RESETS **********************/
+
+/********************* BEGIN MAIN CSS **********************/
+
+@import url('https://fonts.googleapis.com/css?family=Orienta&display=swap');
+
+html, body {
+	font-family: 'Orienta', sans-serif;
+  color: #000000;
+}
+
+p {
+	font-family: 'Orienta', sans-serif;
+	color: #ffffff;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~PAGE 1~~~~~~~~~~~~~~~~~~~~~ */
+.home {
+	text-align: center;
+	float: center;
+	justify-content: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	width: 100%;
+	color: #ffffff;
+	margin: 100vh 0;
+	z-index: 100;
+	position: absolute;
+	display: block;
+}
+.home p {
+	text-align: center;
+	float: center;
+	justify-content: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	width: 100%;
+	color: #ffffff;
+	margin: -49vh 0;
+}
+.stack {
+	z-index: 0;
+	position: relative;
+	text-align: justify;
+	float: center;
+	justify-content: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	display: block;
+	max-height: 90vh;
+	margin-top:-3vh;
+	margin-bottom: -5vh;
+}
+.stack h1 {
+	font-size: 53px;
+	color: #00FF85;
+	padding: 4vh 2vw;
+	top: 0;
+	bottom: 2vh;
+	overflow: hidden;
+}
+.center {
+	text-align: center;
+	float: center;
+	vertical-align: middle;
+	margin: auto;
+	padding: 50vh auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~PAGE 2~~~~~~~~~~~~~~~~~~~~~ */
+.header {
+	float: left;
+	text-align: left;
+	display: inline-block;
+	padding: 1.75em;
+}
+.header .english {
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.header .code {
+	font-size: 12px;
+	color: #FF0000;
+}
+.about {
+	font-size: 53px;
+	text-align: right;
+	float: right;
+	vertical-align: bottom;
+	bottom: 0;
+	margin-top: 56vh;
+	text-transform: uppercase;
+	width: 38%;
+	padding: 2%;
+}
+/*.button {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #FF0000;
+	background-color: #ffffff;
+	border-radius: 0;
+}*/
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: #FF0000;
+	background: none;
+	cursor: pointer;
+	padding: auto;
+	display: inline-block;
+	margin: auto 4px auto auto;
+	text-transform: uppercase;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.2s; /*all 0.3s*/
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+/* Button 5 */
+.btn-5 {
+	background: #ffffff;
+	color: #FF0000;
+	height: auto;
+	min-width: 127px; /*260*/
+	line-height: 40px;/*24*/
+	font-size: 14px;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.btn-5:active {
+	background: #FFFFFF;
+}
+
+.btn-5 span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0s; /*0.3s*/
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0s; /*0.3s*/
+	-moz-backface-visibility: hidden;
+	transition: all 0s; /*0.3s*/
+	backface-visibility: hidden;
+}
+
+.btn-5:before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	/*line-height: 2.5;
+	font-size: 180%;*/
+	-webkit-transition: all 0; /*0.3s*/
+	-moz-transition: all 0s; /*0.3s*/
+	transition: all 0s; /*0.3s*/
+}
+
+.btn-5:active:before {
+	color: #FF0000;
+}
+/* Button 5b */
+.btn-5b:hover span {
+	-webkit-transform: translateX(200%);
+	-moz-transform: translateX(200%);
+	-ms-transform: translateX(200%);
+	transform: translateX(200%);
+}
+
+.btn-5b:before {
+	left: -100%;
+}
+
+.btn-5b:hover:before {
+	left: 0;
+}
+.icon-remove:before {
+	content: "do it";
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: auto;
+	color: #FF0000;
+}
+/* Button 8 */
+.perspective {
+	-webkit-perspective: 600px; /*800px*/
+	-moz-perspective: 600px; /*800px*/
+	perspective: 600px; /*800px*/
+	display: inline-block;
+}
+.btn-8 {
+	display: block;
+	background: #ffffff;
+	outline: 1px solid transparent; /* FF jagged edges fix */
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.btn-8:active {
+	background: #EEEEEE;
+}
+/* Button 8d */
+.btn-8d:after {
+	width: 20%;
+	height: 100%;
+	left: 100%;
+	top: 0;
+	background: #ffffff;
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform: rotateY(225deg); /*90deg*/
+	-moz-transform-origin: 0% 0%;
+	-moz-transform: rotateY(225deg); /*90deg*/
+	-ms-transform-origin: 0% 0%;
+	-ms-transform: rotateY(225deg); /*90deg*/
+	transform-origin: 0% 0%;
+	transform: rotateY(225deg); /*90deg*/
+}
+.btn-8d:hover {
+	-webkit-transform: rotateY(-25eg); /*-15deg*/
+	-moz-transform: rotateY(-25deg); /*-15deg*/
+	-ms-transform: rotateY(-25deg); /*-15deg*/
+	transform: rotateY(-25deg); /*-15deg*/
+}
+
+circle {
+	fill: none;
+	stroke-width: 1.5px;
+}
+
+.page, .page a {
+ cursor: none;
+}
+
+.cursor {
+	position: fixed;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+}
+.cursor--small {
+	width: 5px;
+	height: 5px;
+	left: -2.5px;
+	top: -2.5px;
+	border-radius: 50%;
+	z-index: 11000;
+	background: var(--color-text);
+}
+.cursor--canvas {
+	width: 100vw;
+	height: 100vh;
+	z-index: 12000;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#header{
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 63px;
+	background: black; filter:alpha(opacity=80);
+	/* CSS3 standard */
+	opacity:0.8;
+	z-index: 2;
+}
+
+#header ul{
+	float: right;
+	height: 63px;
+}
+
+#header ul li{
+	float: left;
+}
+
+.content-frame{
+	/*padding-top: 63px;*/
+	}
+
+.slide:hover{
+	cursor: pointer;}
+
+
+.first{
+	background: #000000;
+	overflow: hidden;
+	margin: 0 0;
+	padding: 0;
+}
+
+/*.first .content-frame .content{
+	width: 397px;
+	height: 470px;
+	background: url(../images/slide-1.png) top left no-repeat;
+	margin: auto;
+	}*/
+
+
+.second{
+	background: #000000;
+}
+
+/*.second .content-frame .content{
+	width: 334px;
+	height: 526px;
+	background: url(../images/slide-2.png) top left no-repeat;
+	margin: auto;
+	}*/
+
+
+/*.third{
+	background: #e57e71;}
+
+.third .content-frame .content{
+	width: 504px;
+	height: 490px;
+	background: url(../images/slide-3.png) top left no-repeat;
+	margin: auto;
+	}
+
+
+.fourth{
+	background: #fff;}
+
+.fourth .content-frame .content{
+	width: 414px;
+	height: 510px;
+	background: url(../images/slide-4.png) top left no-repeat;
+	margin: auto;
+	}
+
+
+.fifth{
+	background: #24261f;
+	padding-top: 63px;
+	}
+
+.content-frame-fifth{
+	background: url(../images/slide-5.png) center center no-repeat;
+	background-size: 100%;
+	}
+
+.sixth{
+	background: #24261f;}
+
+.sixth .content-frame .content{
+	width: 458px;
+	height: 420px;
+	background: url(../images/slide-6.png) top left no-repeat;
+	margin: auto;
+	}
+
+
+.seventh{
+	background: #81cec5;}
+
+.seventh .content-frame .content{
+	width: 360px;
+	height: 562px;
+	background: url(../images/slide-7.png) top left no-repeat;
+	margin: auto;
+	}
+
+
+.eigth{
+	background: #84b1d5;}
+
+.eigth .content-frame .content{
+	width: 345px;
+	height: 550px;
+	background: url(../images/slide-8.png) top left no-repeat;
+	margin: auto;
+	}
+
+
+.ninth{
+	background: #e57e71;
+	overflow: hidden;
+	}
+
+.ninth .content-frame .content{
+	width: 418px;
+	height: 600px;
+	text-align: center;
+	margin: auto;
+	}
+
+.tenth{
+	background: #24261f;
+	}
+.tenth:hover{
+	cursor: default;}
+
+.tenth .content-frame .content{
+	width: 580px;
+	height: 620px;
+	margin: auto;
+	}
+
+.eleventh{
+	background: #24261f;
+	}
+.eleventh:hover{
+	cursor: default;
+	}
+
+.eleventh .content-frame .content{
+	width: 580px;
+	height: 350px;
+	margin: auto;
+	}*/
