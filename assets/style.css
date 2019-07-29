@@ -49,16 +49,21 @@ table {
 /********************* BEGIN MAIN CSS **********************/
 
 @import url('https://fonts.googleapis.com/css?family=Orienta&display=swap');
+@font-face {
+font-family: 'Andale Mono';
+font-style: normal;
+font-weight: normal;
+src: local('Andale Mono'), url('assets/andale-mono-cufonfonts-webfont/ANDALEMO.woff') format('woff');
+}
 
 html, body {
-	font-family: 'Orienta', sans-serif;
+	font-family: 'Andale Mono', sans-serif;
   color: #ffffff;
-	background-color: #000000;
+	background-color: #1C2F40;
 }
 
 p {
-	font-family: 'Orienta', sans-serif;
-	color: #ffffff;
+	font-family: 'Andale Mono', sans-serif;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~PAGE 1~~~~~~~~~~~~~~~~~~~~~ */
 .home {
@@ -68,7 +73,7 @@ p {
 	vertical-align: middle;
 	text-transform: uppercase;
 	width: 100%;
-	color: #ffffff;
+	color: #EF572E;
 	margin: 100vh 0;
 	z-index: 100;
 	position: absolute;
@@ -81,7 +86,7 @@ p {
 	vertical-align: middle;
 	text-transform: uppercase;
 	width: 100%;
-	color: #ffffff;
+	color: #EF572E;
 	margin: -49vh 0;
 }
 .stack {
@@ -99,7 +104,7 @@ p {
 }
 .stack h1, #output {
 	font-size: 53px;
-	color: #00FF85;
+	color: #ffffff;
 	padding: 4vh 2vw;
 	top: 0;
 	bottom: 2vh;
@@ -118,28 +123,90 @@ p {
 	float: left;
 	text-align: left;
 	display: inline-block;
-	padding: 1.75em;
+	max-width: 100vw;
+	min-width: 95vw;
+	padding: 1.75em 0 0 1.75em;
 }
 .header .english {
 	font-size: 14px;
-	color: #ffffff;
+	color: #EF572E;
 	text-transform: uppercase;
 }
 .header .code {
 	font-size: 12px;
-	color: #FF0000;
+	color: #FFFFFF;
+}
+.header ul li {
+	display: inline-block;
+	padding: 0 10px 50px 10px;
+	float: right;
+	text-align: right;
+	color: #EF572E;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.header ul {
+	margin-right: 0;
 }
 .about {
-	font-size: 53px;
-	text-align: right;
+width: 420px;
+height: 437px;
+float: right;
+padding-top: 25px;
+
+font-family: 'Andale Mono';
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 100%;
+/* or 24px */
+text-transform: uppercase;
+
+color: #EF572E;
+border-top: 0.25px solid white;
+margin-right: 20px;
+}
+
+.hire-us {
+	color: #EF572E;
+	font-size: 24px;
+	padding: 50px 20px 0 0;
 	float: right;
-	vertical-align: bottom;
+}
+.about-meat {
+	float: left;
 	bottom: 0;
-	margin-top: 56vh;
+	vertical-align: bottom;
+	vertical-position: bottom;
+	margin-top: 25em;
+	padding: 20px;
+}
+.about-title {
+	width: 801px;
+	height: 225px;
+	left: 71px;
+	top: 371px;
+
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 84px;
+	line-height: 87.5%;
+	/* or 73px */
 	text-transform: uppercase;
-	width: 38%;
-	padding: 2%;
-	max-height: 100vh;
+
+	color: #EF572E;
+}
+.about-title-below-left {
+	padding-top: 15px;
+	float: left;
+	line-height: 24px;
+}
+.about-title-below-right {
+	padding-top: 15px;
+	float: left;
+	padding-left: 50px;
+	line-height: 24px;
 }
 /*.button {
 	text-align: center;
@@ -333,7 +400,7 @@ circle {
 
 
 .first{
-	background: #000000;
+	background: #1C2F40;
 	overflow: hidden;
 	margin: 0 0;
 	padding: 0;
@@ -348,7 +415,7 @@ circle {
 
 
 .second{
-	background: #000000;
+	background: #1C2F40;
 }
 
 /*.second .content-frame .content{
