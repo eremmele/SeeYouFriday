@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -72,8 +73,42 @@ a{
 		color: inherit;
 		text-decoration: none;
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~PAGE 1~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~INTRO~~~~~~~~~~~~~~~~~~~~~ */
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+	background-color: #1C2F40;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  /*background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+	background-color: #1C2F40;
+}
+
 .home {
+	position: flex;
+	align:self;
 	text-align: center;
 	float: center;
 	justify-content: center;
@@ -81,10 +116,11 @@ a{
 	text-transform: uppercase;
 	width: 100%;
 	color: #EF572E;
-	margin: 100vh 0;
+	margin: 98vh 0;
 	z-index: 100;
 	position: absolute;
 	display: block;
+	background-color: #1C2F40;
 }
 .home p {
 	text-align: center;
@@ -151,6 +187,7 @@ a{
 	grid-template-areas: 'header demos'
 	'... info'
 	'github info';
+	z-index: 98;
 }
 .header__title {
 	font-size: 1em;
