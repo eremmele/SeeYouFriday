@@ -200,8 +200,13 @@ paper.view.onFrame = event => {
 
 	<main class="page">
 
-			<div class="cursor cursor--small"></div>
-			<canvas class="cursor cursor--canvas" resize></canvas>
+		<div id="curr" class="custom-cursor" data-custom-cursor>
+			<div class="cursor"></div>
+		</div>
+
+		<div id="curr2" class="custom-cursor custom-cursor--y" data-custom-cursor>
+			<div class="cursor"></div>
+		</div>
 
 <!--<div id="header">
 <h1><a href="#" onClick="goToByScroll('first')">See You Friday</a></h1>
@@ -247,7 +252,7 @@ paper.view.onFrame = event => {
 							<p class="blurb">we are a group of designers from enemy coasts doing cool work with cool people.</p>
 							<p class="hire-us glitch-nav__button"><span>hire us <img src="assets/hireus-Arrow.svg" width="53px;" /></span></p>
 					</div>
-					<div class="about-meat">
+					<dcv class="about-meat">
 						<p class="superscript">01</p>
 						<p class="about-title">see<br> you<br> friday</p>
 						<div class="egg">
@@ -294,6 +299,8 @@ paper.view.onFrame = event => {
 		</div> -->
 
 </main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/cursor.js"></script>
 
 <script src="js/modernizr.custom.js"></script>
 <script src="js/morse-scramble.js"></script>
