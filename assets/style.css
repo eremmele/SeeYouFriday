@@ -508,6 +508,18 @@ ul li a:active svg {
 	margin-top: 25em;
 	margin-left: 1.5em;
 }
+@media (min-width: 0px) and (max-width: 767px) {
+	.about-meat {
+		float: left;
+		bottom: 4.5em;
+		vertical-align: bottom;
+		vertical-position: bottom;
+		position: absolute;
+		margin-top: 15em;
+		margin-left: 1.5em;
+	}
+}
+
 .about-title {
 	width: 801px;
 	height: 225px;
