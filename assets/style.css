@@ -255,6 +255,11 @@ a{
 	'github info';*/
 	z-index: 97;
 }
+@media (min-width: 1px) and (max-width: 767px) {
+.content--fixed {
+	max-height: 90vh;
+	}
+}
 .header__title {
 	font-size: 1em;
 	font-weight: normal;
@@ -810,3 +815,23 @@ circle {
 	height: 350px;
 	margin: auto;
 	}*/
+
+.for-oh-for {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+	text-align: center;
+	align-self: center;
+	vertical-align: middle;
+
+	text-align: center;
+}
+.for-oh-for div {
+	display: inline-block;
+}

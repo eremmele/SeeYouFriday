@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>
+See You Friday
+</title>
+
+<!-- Meta Tags -->
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" /> <!-- email -->
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="assets/reset-min.css">
+<link rel="stylesheet" href="assets/style.css" media="screen,projection" type="text/css" />
+
+<!-- JS -->
+<script src="js/jquery.min.js"></script>
+<script>
+function goToByScroll(id){
+			$('html,body').animate({scrollTop: $("."+id).offset().top},'slow');
+}
+$(function()
+{
+        $('.slide') .css({'height': (($(window).height()) )});
+        $('.content-frame') .css({'height': (($(window).height()) - 63)+'px'});
+        $('.content-frame-fifth') .css({'height': (($(window).height()) - 63)+'px'});
+
+        $(window).bind('resize', function(){
+            $('.slide') .css({'height': (($(window).height()) )});
+            $('.content-frame') .css({'height': (($(window).height()) - 63)+'px'});
+            $('.content-frame-fifth') .css({'height': (($(window).height()) - 63)+'px'});
+        });
+});
+
+$('document').ready(function(){
+	$("div.content-frame").vAlign("div");
+});
+
+(function ($) {
+	$.fn.vAlign = function(container) {
+		return this.each(function(i){
+			if(container == null) {
+				container = 'div';
+			}
+			$(this).html("<" + container + ">" + $(this).html() + "</" + container + ">");
+			var el = $(this).children(container + ":first");
+			var elh = $(el).height(); //new element height
+			var ph = $(this).height(); //parent height
+			var nh = (ph - elh) / 2; //new height to apply
+			$(el).css('padding-top', nh);
+		});
+	};
+})(jQuery);
+</script>
+<!--<script>
+	window.setTimeout("location=('#second');",5000);
+	var opacity = 100;
+function fadeOut() {
+    opacity--;
+    div.style.opacity = opacity/100;
+    if (opacity > 0){
+        setTimeout(fadeOut,speed);
+    }
+}
+fadeOut();
+</script>-->
+<script>
+// the draw loop of Paper.js
+// (60fps with requestAnimationFrame under the hood)
+paper.view.onFrame = event => {
+  // using linear interpolation, the circle will move 0.2 (20%)
+  // of the distance between its current position and the mouse
+  // coordinates per Frame
+  if (!isStuck) {
+    // move circle around normally
+    lastX = lerp(lastX, clientX, 0.2);
+    lastY = lerp(lastY, clientY, 0.2);
+    group.position = new paper.Point(lastX, lastY);
+  } else if (isStuck) {
+    // fixed position on a nav item
+    lastX = lerp(lastX, stuckX, 0.2);
+    lastY = lerp(lastY, stuckY, 0.2);
+    group.position = new paper.Point(lastX, lastY);
+  }
+
+  if (isStuck && polygon.bounds.width < shapeBounds.width) {
+    // scale up the shape
+    polygon.scale(1.08);
+  } else if (!isStuck && polygon.bounds.width > 30) {
+    // remove noise
+    if (isNoisy) {
+      polygon.segments.forEach((segment, i) => {
+        segment.point.set(bigCoordinates[i][0], bigCoordinates[i][1]);
+      });
+      isNoisy = false;
+      bigCoordinates = [];
+    }
+    // scale down the shape
+    const scaleDown = 0.92;
+    polygon.scale(scaleDown);
+  }
+
+  // while stuck and big, apply simplex noise
+  if (isStuck && polygon.bounds.width >= shapeBounds.width) {
+    isNoisy = true;
+    // first get coordinates of large circle
+    if (bigCoordinates.length === 0) {
+      polygon.segments.forEach((segment, i) => {
+        bigCoordinates[i] = [segment.point.x, segment.point.y];
+      });
+    }
+
+    // loop over all points of the polygon
+    polygon.segments.forEach((segment, i) => {
+
+      // get new noise value
+      // we divide event.count by noiseScale to get a very smooth value
+      const noiseX = noiseObjects[i].noise2D(event.count / noiseScale, 0);
+      const noiseY = noiseObjects[i].noise2D(event.count / noiseScale, 1);
+
+      // map the noise value to our defined range
+      const distortionX = map(noiseX, -1, 1, -noiseRange, noiseRange);
+      const distortionY = map(noiseY, -1, 1, -noiseRange, noiseRange);
+
+      // apply distortion to coordinates
+      const newX = bigCoordinates[i][0] + distortionX;
+      const newY = bigCoordinates[i][1] + distortionY;
+
+      // set new (noisy) coodrindate of point
+      segment.point.set(newX, newY);
+    });
+
+  }
+  polygon.smooth();
+};
+</script>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script  src="js/preloader.js"></script>
+<!-- end preload script-->
+</head>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+<body>
+
+	<main class="page">
+
+		<div id="curr" class="custom-cursor" data-custom-cursor>
+			<div class="cursor"></div>
+		</div>
+
+		<div id="curr2" class="custom-cursor custom-cursor--y" data-custom-cursor>
+			<div class="cursor"></div>
+		</div>
+
+    <div class="for-oh-for">
+        <div><p> Aww shucks.... you're lost. But your business doesn't have to be... <a href="index.html">come back!</a></p></div
+        <div><img src="https://media.giphy.com/media/xUA7b2S7SxhM1cGdsQ/giphy.gif"/></div>
+    </div>
+  </main>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/cursor.js"></script>
+
+<!-- eye -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<script src="js/eye.js"></script>
+<!-- end eye -->
+
+<script src="js/modernizr.custom.js"></script>
+<script src="js/morse-scramble.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+</body>
+</html>
