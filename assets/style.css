@@ -29,6 +29,11 @@ body {
 	line-height: 1;
 	overflow: hidden;
 }
+@media (min-width: 1px) and (max-width: 767px) {
+.body {
+	max-height: 90vh;
+	}
+}
 body:hover .custom-cursor {
   opacity: 1;
 }
@@ -254,11 +259,6 @@ a{
 	'... info'
 	'github info';*/
 	z-index: 97;
-}
-@media (min-width: 1px) and (max-width: 767px) {
-.content--fixed {
-	max-height: 90vh;
-	}
 }
 .header__title {
 	font-size: 1em;
