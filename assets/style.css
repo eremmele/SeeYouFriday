@@ -57,9 +57,7 @@ table {
 @font-face {
 font-family: 'Roboto Mono', monospace;
 font-style: normal;
-font-weight: normal;
-src: local('Andale Mono'), url('assets/andale-mono-cufonfonts-webfont/ANDALEMO.woff') format('woff');
-}
+font-weight: normal;}
 
 html, body {
 	font-family: 'Roboto Mono', monospace;
@@ -240,7 +238,6 @@ a{
 }
 .content--fixed {
 	position: fixed;
-	z-index: 10000;
 	top: 0;
 	left: 0;
 	display: grid;
@@ -249,13 +246,13 @@ a{
 	max-width: none;
 	min-height: 0;
 	height: 100vh;
-	padding: 1.5em 1.5em 1.5em 1.25em;
-	pointer-events: none;
-	grid-template-columns: 50% 50%;
+	margin: 1.5em 1.5em 1.5em 1.25em; /*padding*/
+	/*pointer-events: none;
+	-template-columns: 50% 50%;
 	grid-template-rows: auto auto 4em;
 	grid-template-areas: 'header demos'
 	'... info'
-	'github info';
+	'github info';*/
 	z-index: 97;
 }
 .header__title {
@@ -273,12 +270,13 @@ nav {
 	position: absolute;
 	float: right;
 	display: inline-block;
-	margin: 2.5em 2.5em 1.5em 0;
-	right: 3em;
+	margin: 1.5em 1.5em 1.5em 0;
+	right: 2.5em;
 	vertical-align: middle;
 	align: center;
+	z-index: 98;
 }
-.header-right ul li {
+/*.header-right ul li {
 	display: inline-block;
 	float: right;
 	text-align: right;
@@ -302,7 +300,7 @@ nav {
   opacity: 1;
 	width: 18px;
   transition: ease-in 0.2s;
-}
+}*/
 .header {
 	float: left;
 	text-align: left;
@@ -319,6 +317,44 @@ nav {
 .header .code {
 	font-size: 12px;
 	color: #FFFFFF;
+}
+
+
+/* REVISIT THE MESSY CODE ABOVE */
+/*.nav-arrows {
+	float: left;
+	text-align: left;
+	display: inline-block;
+	max-width: 100vw;
+	min-width: 95vw;
+	padding: 1.75em 0 0 1.75em;
+}*/
+.nav-arrows ul li {
+	display: inline-block;
+	padding: 0 10px 50px 10px;
+	float: right;
+	text-align: right;
+	color: #EF572E;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.nav-arrows ul {
+	margin-right: 0;
+}
+.nav-arrows ul li span a svg {
+  opacity: 0;
+	width: 18px;
+  padding-right: 5px;
+}
+.nav-arrows ul li span a:hover svg {
+  opacity: 1;
+	width: 18px;
+  transition: ease-in 0.2s;
+}
+.nav-arrows ul li span a:active svg {
+  opacity: 1;
+	width: 18px;
+  transition: ease-in 0.2s;
 }
 
 /* HJSDKJFKSDHFJDSKJFHKSJDHFKJSHDKFJSKDFJS */
@@ -424,14 +460,15 @@ ul li a:active svg {
 }*/
 .superscript {
 	position: absolute;
+	text-align: left;
 	width: 133px;
 	height: 23px;
-	left: 20px;
 	margin-top: -1em;
 	font-size: 10px;
 	line-height: 100%;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	margin-left: -10px;
 }
 
 .about {
@@ -440,7 +477,7 @@ ul li a:active svg {
 	height: 437px;
 	float: right;
 	top: 5em;
-	right: 2em;
+	right: 3em;
 	padding-top: 25px;
 	font-family: 'Roboto Mono', monospace;
 	font-style: normal;
@@ -456,27 +493,27 @@ ul li a:active svg {
 .hire-us {
 	color: #EF572E;
 	font-size: 24px;
-	padding: 50px 20px 0 0;
+	padding: 40px 0 0 0;
 	float: right;
 	vertical-align:middle;
 	align:center;
+	margin-right: 0;
 }
 .about-meat {
 	float: left;
-	bottom: 2em;
+	bottom: 4.5em;
 	vertical-align: bottom;
 	vertical-position: bottom;
 	position: absolute;
 	margin-top: 25em;
-	padding: 20px;
-	left: 1.75em;
+	margin-left: 1.5em;
 }
 .about-title {
 	width: 801px;
 	height: 225px;
-	left: 71px;
+	/*left: 71px;*/
 	top: 371px;
-	font-family: 'Roboto Mono';
+	font-family: 'Roboto Mono', monospace;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 84px;
@@ -506,17 +543,16 @@ ul li a:active svg {
 	position: absolute;
 	text-align: center;
 	vertical-align: middle;
-		align-self: center;
+	align-self: center;
 }
 .egg div {
 	position: absolute;
 	z-index: 1;
 	text-align: center;
 	vertical-align: middle;
-		align-self: center;
+	align-self: center;
 }
 .egg p {
-	display: block;
 	position: absolute;
 	text-align: center;
 	align-self: center;
@@ -525,6 +561,15 @@ ul li a:active svg {
 	margin: 3.5em;
 	color: #EF572E;
 	z-index: 2;
+}
+svg.eye {
+  overflow: visible;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  position: absolute;
+  fill: none;
+  text-transform:uppercase;
 }
 circle {
 	fill: none;
