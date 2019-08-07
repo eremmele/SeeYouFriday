@@ -511,11 +511,11 @@ ul li a:active svg {
 @media (min-width: 1px) and (max-width: 767px) {
 	.about-meat {
 		float: left;
-		bottom: 4.5em;
+		bottom: 10em;
 		vertical-align: bottom;
 		vertical-position: bottom;
 		position: absolute;
-		margin-top: none;
+		margin-top: -5em;
 		margin-left: 1.5em;
 	}
 }
