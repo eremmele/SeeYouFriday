@@ -537,39 +537,79 @@ ul li a:active svg {
 	line-height: 24px;
 }
 .egg {
-	text-transform: uppercase;
-	margin: 7em 0 0 17.5em;
-	top: 0;
-	position: absolute;
-	text-align: center;
-	vertical-align: middle;
-	align-self: center;
-}
-.egg div {
-	position: absolute;
 	z-index: 1;
 	text-align: center;
 	vertical-align: middle;
 	align-self: center;
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+
+	margin: -3.75em 0 0 17em;
+	position: absolute;
+}
+.egg div {
+	text-transform: uppercase;
+	z-index: 1;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+	text-align: center;
+	align-self: center;
+	vertical-align: middle;
 }
 .egg p {
-	position: absolute;
+	align-items: center;
 	text-align: center;
 	align-self: center;
 	vertical-align: middle;
 	font-size: 10px;
-	margin: 3.5em;
 	color: #EF572E;
 	z-index: 2;
+	position: absolute;
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+	margin: -25px 0 0 50px;
 }
 svg.eye {
   overflow: visible;
-  background-color: #fff;
-  left: 0;
-  top: 0;
   position: absolute;
   fill: none;
   text-transform:uppercase;
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+	text-align: center;
+	align-self: center;
+	vertical-align: middle;
 }
 circle {
 	fill: none;
