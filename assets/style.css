@@ -56,13 +56,13 @@ table {
 /********************* END RESETS **********************/
 
 /********************* BEGIN MAIN CSS **********************/
-
-@import url('https://fonts.googleapis.com/css?family=Orienta&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+/*
 @font-face {
 font-family: 'Roboto Mono', monospace;
 font-style: normal;
-font-weight: normal;}
+font-weight: normal;
+}*/
 
 html, body {
 	font-family: 'Roboto Mono', monospace;
