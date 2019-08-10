@@ -28,11 +28,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	overflow: hidden;
-	max-height: 100vh;
+	max-height: 100%;
 }
 @media (min-width: 1px) and (max-width: 767px) {
 .body {
-	max-height: 90vh;
+	max-height: 90%;
 	}
 }
 body:hover .custom-cursor {
@@ -245,7 +245,7 @@ a{
 	align-items: center;
 	margin: 0 auto;
 	min-height: 100vh;
-	max-height: 100vh;
+	max-height: 100%;
 }
 .content--fixed {
 	position: fixed;
@@ -257,7 +257,7 @@ a{
 	max-width: 100%;
 	min-height: 0;
 	height: 100vh;
-	max-height: 100vh;
+	max-height: 100%;
 	margin: 1em 1.5em 1.5em 1.25em; /*padding*/
 	/*pointer-events: none;
 	-template-columns: 50% 50%;
@@ -717,7 +717,7 @@ circle {
 
 .content-frame{
 	/*padding-top: 63px;*/
-	max-height: 100vh;
+	max-height: 100%;
 	}
 
 .slide:hover{
@@ -730,11 +730,11 @@ circle {
 	overflow: hidden;
 	margin: 0 0;
 	padding: 0;
-	max-height: 100vh;
+	max-height: 100%;
 	height: 100vh;
 }
 .slide {
-	max-height: 100vh;
+	max-height: 100%;
 }
 
 .background {
