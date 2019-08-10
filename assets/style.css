@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	overflow: hidden;
+	max-height: 100vh;
 }
 @media (min-width: 1px) and (max-width: 767px) {
 .body {
@@ -711,6 +712,7 @@ circle {
 
 .content-frame{
 	/*padding-top: 63px;*/
+	max-height: 100vh;
 	}
 
 .slide:hover{
@@ -723,6 +725,11 @@ circle {
 	overflow: hidden;
 	margin: 0 0;
 	padding: 0;
+	max-height: 100vh;
+	height: 100vh;
+}
+.slide {
+	max-height: 100vh;
 }
 
 .background {
