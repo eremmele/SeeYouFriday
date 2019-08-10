@@ -244,6 +244,7 @@ a{
 	align-items: center;
 	margin: 0 auto;
 	min-height: 100vh;
+	max-height: 100vh;
 }
 .content--fixed {
 	position: fixed;
@@ -252,9 +253,10 @@ a{
 	display: grid;
 	align-content: space-between;
 	width: 100%;
-	max-width: none;
+	max-width: 100%;
 	min-height: 0;
 	height: 100vh;
+	max-height: 100vh;
 	margin: 1em 1.5em 1.5em 1.25em; /*padding*/
 	/*pointer-events: none;
 	-template-columns: 50% 50%;
@@ -499,6 +501,7 @@ ul li a:active svg {
 	text-transform: uppercase;
 	color: #EF572E;
 	border-top: 0.25px solid white;
+	color: #fff;
 }
 
 .hire-us {
@@ -548,18 +551,20 @@ ul li a:active svg {
 .about-title-below {
 	margin-left: .6em;
 	font-size: 14px;
-	font-weight: regular;
-	line-height: 20px;
+	font-weight: 100;
+	line-height: 22px;
 	font-family: 'Roboto Mono', monospace;
 }
 .about-title-below-left {
-	padding-top: 15px;
+	padding-top: 10px;
 	float: left;
+		font-weight: 100;
 }
 .about-title-below-right {
-	padding-top: 15px;
+	padding-top: 10px;
 	float: left;
 	padding-left: 50px;
+		font-weight: 100;
 }
 .egg {
 	z-index: 1;
@@ -635,6 +640,23 @@ svg.eye {
 	text-align: center;
 	align-self: center;
 	vertical-align: middle;
+}
+.images {
+	z-index: 0;
+}
+.left_bg {
+	position: absolute;
+	width: 365px;
+	height: 423px;
+	left: 425px;
+	bottom: 0;
+}
+.right_bg {
+	position: absolute;
+	width: 584px;
+	height: 423px;
+	right: 0;
+	top: 240px;
 }
 circle {
 	fill: none;
