@@ -504,6 +504,11 @@ ul li a:active svg {
 	border-top: 0.25px solid white;
 	color: #fff;
 }
+@media (min-width: 1px) and (max-width: 767px) {
+	.about{
+	top: auto;
+	}
+}
 
 .hire-us {
 	color: #EF572E;
