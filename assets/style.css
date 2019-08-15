@@ -528,13 +528,19 @@ ul li a:active svg {
 
 .hire-us {
 	color: #272727;
-	font-size: 24px; /*formerly 24*/
+	font-size: 14px; /*formerly 24*/
 	float: right;
 	vertical-align:middle;
-	align:center;
-	margin-right: 0;
-	font-weight: 300;
+	align:right;
+	flex:right;
+	font-weight: normal;
 	bottom: 1em;
+	position: absolute;
+	text-align: right;
+	text-transform: uppercase;
+	display: inline-block;
+	max-width: 95vw;
+	min-width: 95vw;
 }
 .about-meat {
 	float: left;
