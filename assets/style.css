@@ -163,7 +163,7 @@ a{
   /* change if the mask should have another color then white */
   z-index: 99;
   /* makes sure it stays on top */
-	background-color: #1C2F40;
+	background-color: #ffffff;
 }
 
 #status {
@@ -180,7 +180,7 @@ a{
   background-position: center;
   margin: -100px 0 0 -100px;
   /* is width and height divided by two */
-	background-color: #1C2F40;
+	background-color: #ffffff;
 }
 
 .home {
@@ -197,7 +197,7 @@ a{
 	z-index: 100;
 	position: absolute;
 	display: block;
-	background-color: #1C2F40;
+	background-color: #ffffff;
 }
 .home p {
 	text-align: center;
@@ -224,7 +224,7 @@ a{
 }
 .stack h1, #output {
 	font-size: 53px;
-	color: #ffffff;
+	color: #EF572E;
 	padding: 4vh 2vw;
 	top: 0;
 	bottom: 2vh;
@@ -494,7 +494,7 @@ ul li a:active svg {
 	font-size: 11px;
 	line-height: 100%;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: #EF572E;
 	margin-left: -10px;
 }
 
@@ -508,8 +508,8 @@ ul li a:active svg {
 	padding-top: 25px;
 	font-family: 'Roboto Mono', monospace;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
+	font-weight: 300;
+	font-size: 24px;
 	line-height: 110%;
 	/* or 24px */
 	text-transform: uppercase;
@@ -525,12 +525,13 @@ ul li a:active svg {
 
 .hire-us {
 	color: #EF572E;
-	font-size: 18px; /*formerly 24*/
+	font-size: 24px; /*formerly 24*/
 	padding: 40px 0 0 0;
 	float: right;
 	vertical-align:middle;
 	align:center;
 	margin-right: 0;
+	font-weight: 300;
 }
 .about-meat {
 	float: left;
@@ -575,25 +576,26 @@ ul li a:active svg {
 	line-height: 87.5%;
 	/* or 73px */
 	text-transform: uppercase;
-	color: #EF572E;
+	color: #FFFFFF;
 }
 .about-title-below {
 	margin-left: .6em;
 	font-size: 14px;
-	font-weight: 100;
+	font-weight: normal;
 	line-height: 22px;
 	font-family: 'Roboto Mono', monospace;
+	color: #EF572E;
 }
 .about-title-below-left {
-	padding-top: 10px;
+	padding-top: 25px;
 	float: left;
-		font-weight: 100;
+		font-weight: normal;
 }
 .about-title-below-right {
-	padding-top: 10px;
+	padding-top: 25px;
 	float: left;
 	padding-left: 50px;
-		font-weight: 100;
+		font-weight: normal;
 }
 .egg {
 	z-index: 1;
