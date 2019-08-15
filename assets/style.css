@@ -29,6 +29,9 @@ body {
 	line-height: 1;
 	overflow: hidden;
 	max-height: 100%;
+	-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
 }
 @media (min-width: 1px) and (max-width: 767px) {
 .body {
@@ -57,7 +60,7 @@ table {
 /********************* END RESETS **********************/
 
 /********************* BEGIN MAIN CSS **********************/
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700|Roboto:400,700,900&display=swap');
 /*
 @font-face {
 font-family: 'Roboto Mono', monospace;
