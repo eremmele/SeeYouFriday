@@ -68,7 +68,10 @@ font-weight: normal;
 html, body {
 	font-family: 'Roboto Mono', monospace;
   color: #ffffff;
-	background: #1C2F40;
+	background: #ffffff;
+	background-image: url("assets/trees_bg.png");
+	background-size: cover;
+	background-position: bottom;
 }
 
 body div.first {
@@ -192,7 +195,7 @@ a{
 	vertical-align: middle;
 	text-transform: uppercase;
 	width: 100%;
-	color: #EF572E;
+	color: #272727;
 	margin: 98vh 0;
 	z-index: 100;
 	position: absolute;
@@ -206,7 +209,7 @@ a{
 	vertical-align: middle;
 	text-transform: uppercase;
 	width: 100%;
-	color: #EF572E;
+	color: #272727;
 	margin: -49vh 0;
 }
 .stack {
@@ -224,7 +227,7 @@ a{
 }
 .stack h1, #output {
 	font-size: 53px;
-	color: #EF572E;
+	color: #272727;
 	padding: 4vh 2vw;
 	top: 0;
 	bottom: 2vh;
@@ -270,11 +273,12 @@ a{
 .header__title {
 /*	font-size: 1em;*/
 	font-weight: normal;
-	margin: 0;
+	margin: 2em 0 0 0;
 	/*padding: 0.5rem 0 0 0;*/
 	/*transform: scale(1,-1);*/
 	align: center;
-	line-height: 2;
+	line-height: 1;
+	width: 25%;
 }
 
 /* HJSDKJFKSDHFJDSKJFHKSJDHFKJSHDKFJSKDFJS */
@@ -324,9 +328,10 @@ nav {
 }
 .header .english {
 	font-size: 14px; /*fornerly 14*/
-	color: #EF572E;
+	color: #272727;
 	text-transform: uppercase;
 	font-family: 'Roboto Mono', monospace;
+	line-height: 1;
 }
 .header .code {
 	font-size: 14px; /*fornerly 12*/
@@ -356,7 +361,7 @@ nav {
 	padding: 0 10px 50px 10px;
 	float: right;
 	text-align: right;
-	color: #EF572E;
+	color: #272727;
 	text-transform: uppercase;
 	font-size: 14px;
 }
@@ -500,12 +505,9 @@ ul li a:active svg {
 
 .about {
 	position: absolute;
-	width: 420px;
-	height: 437px;
 	float: right;
-	top: 5em;
-	right: 3em;
-	padding-top: 25px;
+	top: 5.5em;
+	width: 100vw;
 	font-family: 'Roboto Mono', monospace;
 	font-style: normal;
 	font-weight: 300;
@@ -513,8 +515,9 @@ ul li a:active svg {
 	line-height: 110%;
 	/* or 24px */
 	text-transform: uppercase;
-	color: #EF572E;
-	border-top: 0.25px solid white;
+	color: #272727;
+	/*border-top: 0.25px solid white;
+	padding-top: 1em;*/
 	color: #fff;
 }
 @media (min-width: 1px) and (max-width: 767px) {
@@ -524,14 +527,14 @@ ul li a:active svg {
 }
 
 .hire-us {
-	color: #EF572E;
+	color: #272727;
 	font-size: 24px; /*formerly 24*/
-	padding: 40px 0 0 0;
 	float: right;
 	vertical-align:middle;
 	align:center;
 	margin-right: 0;
 	font-weight: 300;
+	bottom: 1em;
 }
 .about-meat {
 	float: left;
@@ -539,9 +542,14 @@ ul li a:active svg {
 	vertical-align: bottom;
 	vertical-position: bottom;
 	position: absolute;
-	margin-top: 25em;
 	margin-left: 1.5em;
 }
+/*.box {
+	z-index: 2;
+	border-top: 0.25px solid white;
+	border-right: 0.25px solid white;
+	margin-top: -15em;
+}*/
 @media (min-width: 1px) and (max-width: 767px) {
 	.about-meat {
 		float: left;
@@ -565,18 +573,20 @@ ul li a:active svg {
 }
 
 .about-title {
-	width: 801px;
+	width: 100vw;
 	height: 225px;
 	/*left: 71px;*/
 	top: 371px;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto', san-serif;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 84px;
+	font-weight: bold;
+	letter-spacing: 20px;
+	margin-left: 20px;
+	font-size: 162px;
 	line-height: 87.5%;
 	/* or 73px */
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: #272727;
 }
 .about-title-below {
 	margin-left: .6em;
@@ -584,18 +594,25 @@ ul li a:active svg {
 	font-weight: normal;
 	line-height: 22px;
 	font-family: 'Roboto Mono', monospace;
-	color: #EF572E;
+	color: #272727;
 }
 .about-title-below-left {
-	padding-top: 25px;
+	padding-top: 35px;
 	float: left;
-		font-weight: normal;
+	font-weight: normal;
 }
 .about-title-below-right {
-	padding-top: 25px;
+	padding-top: 35px;
 	float: left;
 	padding-left: 50px;
-		font-weight: normal;
+	font-weight: normal;
+}
+.about-title-below-alrightalrightalright {
+	padding-top: 35px;
+	float: right;
+	right: 0;
+	margin-right: 500px;
+	font-weight: normal;
 }
 .egg {
 	z-index: 1;
@@ -638,7 +655,7 @@ ul li a:active svg {
 	align-self: center;
 	vertical-align: middle;
 	font-size: 10px;
-	color: #EF572E;
+	color: #272727;
 	z-index: 2;
 	position: absolute;
 
