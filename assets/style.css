@@ -69,14 +69,14 @@ html, body {
 	font-family: 'Roboto Mono', monospace;
   color: #ffffff;
 	background: #ffffff;
-	background-image: url("assets/trees_bg.png");
+	/*background-image: url("assets/trees_bg.png");
 	background-size: cover;
-	background-position: bottom;
+	background-position: bottom;*/
 }
 
-body div.first {
+/*body div.first {
 	background-image: url(/assets/trees_bg.png);
-}
+}*/
 
 p {
 	font-family: 'Roboto Mono', monospace;
