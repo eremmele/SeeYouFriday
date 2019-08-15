@@ -563,7 +563,7 @@ ul li a:active svg {
 	.about-title {
 		font-size: 104px;
 	}
-	.about-title-below {
+	.about-title-below, .about-title-below2 {
 		font-size: 24px;
 		line-height: 32px;
 	}
@@ -596,6 +596,9 @@ ul li a:active svg {
 	font-family: 'Roboto Mono', monospace;
 	color: #272727;
 }
+.about-title-below2 {
+
+}
 .about-title-below-left {
 	padding-top: 35px;
 	float: left;
@@ -608,11 +611,17 @@ ul li a:active svg {
 	font-weight: normal;
 }
 .about-title-below-alrightalrightalright {
-	padding-top: 35px;
-	float: right;
 	right: 0;
-	margin-right: 500px;
+	float: right;
+	flex: right;
+	font-size: 14px;
 	font-weight: normal;
+	line-height: 22px;
+	font-family: 'Roboto Mono', monospace;
+	color: #272727;
+	margin-left: 50vw;
+	padding-right: 1.5em;
+	text-transform: uppercase;
 }
 .egg {
 	z-index: 1;
@@ -720,6 +729,7 @@ circle {
 	left: 0;
 	top: 0;
 	pointer-events: none;
+
 }
 .cursor--small {
 	width: 2.5px;
