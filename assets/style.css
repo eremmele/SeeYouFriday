@@ -32,6 +32,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 text-rendering: optimizeLegibility;
+font-smooth: always;
 }
 @media (min-width: 1px) and (max-width: 767px) {
 .body {
@@ -228,7 +229,7 @@ a{
 	margin-top:-3vh;
 	margin-bottom: -5vh;
 }
-.stack h1, #output {
+.stack h1 { /*#output */
 	font-size: 53px;
 	color: #272727;
 	padding: 4vh 2vw;
@@ -236,6 +237,17 @@ a{
 	bottom: 2vh;
 	overflow: hidden;
 	opacity: 1;
+}
+#logo:hover {
+	display: none;
+	visibility: hidden;
+}
+#output {
+	display: none;
+}
+#output:hover {
+	display: block;
+	visibility: visible;
 }
 .center {
 	text-align: center;
@@ -571,6 +583,7 @@ ul li a:active svg {
 	}
 	.about-title {
 		font-size: 104px;
+		font-smooth: always;
 	}
 	.about-title-below, .about-title-below2 {
 		font-size: 24px;
@@ -710,19 +723,37 @@ svg.eye {
 .images {
 	z-index: 0;
 }
+/* em was converted to % */
 .left_bg {
 	position: absolute;
-	width: 365px;
-	height: 423px;
-	left: 425px;
+	width: 22.813%; /* 365px */
+	height: auto; /* 423px */
+	left: 26.563em;  /* 425px */
 	bottom: 0;
 }
 .right_bg {
 	position: absolute;
-	width: 584px;
-	height: 423px;
+	width: 36.500%; /* 584px */
+	height: auto; /* 423px */
 	right: 0;
-	top: 240px;
+	top: 15.000em; /* 240px */
+}
+@media (min-width: 1px) and (max-width: 767px) {
+	/* add 20 */
+	.left_bg {
+		position: absolute;
+		width: 42.813%; /* 365px */
+		height: auto; /* 423px */
+		left: 46.563em;  /* 425px */
+		bottom: 0;
+	}
+	.right_bg {
+		position: absolute;
+		width: 56.500%; /* 584px */
+		height: auto; /* 423px */
+		right: 0;
+		top: 35.000em; /* 240px */
+	}
 }
 circle {
 	fill: none;
