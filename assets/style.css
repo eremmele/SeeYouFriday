@@ -238,7 +238,7 @@ a{
 	overflow: hidden;
 	opacity: 1;
 }
-#logo:hover {
+/*#logo:hover {
 	display: none;
 	visibility: hidden;
 }
@@ -248,7 +248,7 @@ a{
 #output:hover {
 	display: block;
 	visibility: visible;
-}
+}*/
 .center {
 	text-align: center;
 	float: center;
