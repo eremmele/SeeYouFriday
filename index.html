@@ -18,6 +18,7 @@ See You Friday
 <link rel="stylesheet" type="text/css" href="assets/reset-min.css">
 <link rel="stylesheet" href="assets/style.css" media="screen,projection" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700|Roboto:400,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amiko&display=swap" rel="stylesheet">
 
 <!--Preloader-->
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -177,6 +178,23 @@ paper.view.onFrame = event => {
 };
 </script>
 
+<script>
+function myFunction() {
+  var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var n = weekday[d.getDay()];
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
 <!-- partial (PRELOADER)
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 	<script  src="js/preloader.js"></script>
@@ -187,7 +205,7 @@ paper.view.onFrame = event => {
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
-<body onload="reset()"> <!--onload="reset()"-->
+<body onload="myFunction()"> <!--onload="reset()"-->
 	<!-- Preloader -->
 <!--<div id="preloader">
   <div id="status">&nbsp;</div>
@@ -234,22 +252,22 @@ paper.view.onFrame = event => {
 					<div class="content--fixed">
 						<header class="header">
 							<p class="header__title">
-								<span class="english">a group of designers from enemy coasts doing cool work with cool people. full site coming soon.</span>
+								<span class="english">A group of designers from enemy coasts doing cool work with cool people. Full site coming sometime 2020, we think.</span>
 							</p>
 						</header>
 						<nav class="header-right nav-arrows">
 							<ul>
 <li><span><a href="https://www.instagram.com/seeyoufriday.studio"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.8 5.5"><defs><style>.cls-1 {fill: #272727;}</style></defs><path class="cls-1" d="M13.8,4.3a.6.6,0,0,0,0-.6L11.4,1.4a.3.3,0,0,0-.5,0c-.2.1-.2.3,0,.5L13,4,10.9,6.1c-.2.2-.2.4,0,.5a.3.3,0,0,0,.5,0ZM.1,4.4H13.5V3.6H.1Z" transform="translate(-0.1 -1.3)"/>
-</svg>stalk us</a></span></li>
+</svg>Stalk us.</a></span></li>
 <li><span><a href="mailto:hi@seeyoufriday.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.8 5.5"><defs><style>.cls-1 {fill: #272727;}</style></defs><path class="cls-1" d="M13.8,4.3a.6.6,0,0,0,0-.6L11.4,1.4a.3.3,0,0,0-.5,0c-.2.1-.2.3,0,.5L13,4,10.9,6.1c-.2.2-.2.4,0,.5a.3.3,0,0,0,.5,0ZM.1,4.4H13.5V3.6H.1Z" transform="translate(-0.1 -1.3)"/>
-</svg>say hi</a></span></li>
+</svg>Say hi!</a></span></li>
 <li><span><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.8 5.5"><defs><style>.cls-1 {fill: #272727;}</style></defs><path class="cls-1" d="M13.8,4.3a.6.6,0,0,0,0-.6L11.4,1.4a.3.3,0,0,0-.5,0c-.2.1-.2.3,0,.5L13,4,10.9,6.1c-.2.2-.2.4,0,.5a.3.3,0,0,0,.5,0ZM.1,4.4H13.5V3.6H.1Z" transform="translate(-0.1 -1.3)"/>
-</svg>why friday</a></span></li>
+</svg>Why Friday?</a></span></li>
 						</ul>
 						</nav>
 
 						<div class="about">
-							<p class="about-title" id="logo"><a>see you friday</a></p>
+							<p class="about-title" id="logo"><a>See You Friday</a></p>
 							<!--<p class="about-title" id="output">... . . / -.-- --- ..- / ..-. .-. .. -.. .- -.--</p>-->
 
 							<!--<p class="blurb">we are a group of designdesigners from enemy coasts doing cool work with cool people.</p>-->
@@ -269,7 +287,7 @@ paper.view.onFrame = event => {
 							</svg></div>
 						</div></a>-->
 						<ul class="hire-us">
-							<li><a href="mailto:hi@seeyoufriday.com">hire us <img src="assets/hireus-Arrow2.svg" width="53px;" /></a></li>
+							<li><a href="mailto:hi@seeyoufriday.com">It's <span id="demo"></span>, hire us <img src="assets/hireus-Arrow2.svg" width="53px;" /></a></li>
 						</ul>
 						<div class="about-title-below">
 							<ul class="about-title-below-left">
@@ -287,11 +305,11 @@ paper.view.onFrame = event => {
 				</div>
 				</div>
 
-				<div class="images">
+				<!--<div class="images">
 					<a><img src="assets/left_bg.png" class="left_bg"/></a>
 					<a><img src="assets/right_bg.png" class="right_bg"/></a>
-					<!--<img src="assets/trees_bg.png" style="position:fixed;bottom:0px;left:0%;width:100%;height:100%;" />-->
-				</div>
+					<!--<img src="assets/trees_bg.png" style="position:fixed;bottom:0px;left:0%;width:100%;height:100%;" />
+				</div>-->
 			</div>
 	</div>
 </div>
@@ -320,6 +338,7 @@ paper.view.onFrame = event => {
 		</div> -->
 						</div>
 </main>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="js/cursor.js"></script>
 
