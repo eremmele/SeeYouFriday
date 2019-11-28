@@ -548,8 +548,11 @@ ul li a:active svg {
 	body {
 		font-size: 24px;
 	}
-	about {
+	.about {
 		font-size: 24px;
+	}
+	.logo {
+		font-size: 48px;
 	}
 }
 
