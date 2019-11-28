@@ -85,6 +85,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 	-webkit-text-stroke: 0.45px;
+	cursor: none;
 }
 
 /*body div.first {
@@ -106,9 +107,6 @@ a{
   .custom-cursor {
     display: none !important;
   }
-}
-* {
-	cursor: none;
 }
 .custom-cursor {
   position: fixed;
@@ -547,6 +545,12 @@ ul li a:active svg {
 	.about{
 	top: auto;
 	}
+	body {
+		font-size: 24px;
+	}
+	about {
+		font-size: 24px;
+	}
 }
 
 .hire-us {
@@ -562,8 +566,8 @@ ul li a:active svg {
 	text-align: right;
 	text-transform: none;
 	display: inline-block;
-	max-width: 95vw;
-	min-width: 95vw;
+	max-width: 94vw;
+	min-width: 94vw;
 }
 .about-meat {
 	float: left;
