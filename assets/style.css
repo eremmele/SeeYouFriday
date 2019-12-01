@@ -556,6 +556,10 @@ ul li a:active svg {
 	}
 }
 
+#demo {
+color: #696969;
+}
+
 .hire-us {
 	color: #272727;
 	font-size: 14px; /*formerly 24*/
@@ -653,7 +657,7 @@ ul li a:active svg {
 	font-weight: normal;
 	line-height: 22px;
 	font-family: 'Amiko','Roboto Mono',sans-serif;
-	color: #272727;
+	color: #383838;
 	margin-left: 50vw;
 	padding-right: 1.5em;
 	text-transform: uppercase;
